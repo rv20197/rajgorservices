@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <head>
+      <!-- Meta Information -->
+      <meta name="author" content="TK">
+      <meta name="description" content=" add  content">
+
+      <!-- Title -->
+      <title>Rajgor services</title>
+
+
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- CDN for Font Awesome Icons -->
+      <script src="https://kit.fontawesome.com/a17afbb38d.js"></script>
+
+      <!-- CDN for Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Fira+Code|Ubuntu:400,600|Dancing+Script:400,700&display=swap" rel="stylesheet">
+
+  <!-- owl carousel --> 
+
+
+
+
+      <!-- Bootstrap (CSS) -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      <!-- "Animate" Plugin to get Animation (But animation will start as soon as page loads) -->
+
+      <!-- WOW Plugin to Start Animation on Scroll -->
+      <script type="text/javascript" src="scripts/wow.min.js"></script>
+      <!-- Start WOW() service -->
+      <script type="text/javascript">
+      function openModal() {
+        document.getElementById('my-modal').style.display = "inline-flex";
+
+      }
+
+      function closeModal() {
+        document.getElementById('my-modal').style.display = "none";
+
+      }
+      // variable//
+      var slideIndexJS = 1;
+      // calling function show slide//
+      showSlides(slideIndexJS);
+      // function to execute next and prev //
+      function changeSlides(n) {
+        showSlides(slideIndexJS += n)
+
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndexJS = n);
+
+      }
+      // main function
+      function showSlides(n) {
+        var i;
+        //get all elements with class my-slides
+        var slideJS = document.getElementsByClassName("my-slides");
+
+
+        // overflow condition
+        if (n > slideJS.length) {
+          slideIndexJS = 1;
+
+        }
+        if (n < 1) {
+          slideIndexJS = slideJS.length;
+
+        }
+        // hide all slideJS
+        for (var i = 0; i < slideJS.length; i++) {
+          slideJS[i].style.display = "none";
+        }
+        slideJS[slideIndexJS - 1].style.display = "block";
+      }
+
+      </script>
+      <!-- External CSS Stylesheet -->
+      <link href="css/layout.css" rel="stylesheet" type="text/css">
+<style media="screen">
+.jumbotron{
+  padding: 0 0 0 0;
+
+}
+.parallax{
+
+  text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed!important;
+    overflow: hidden;
+    height: 500px;
+  }
+</style>
+
+
+
+  </head>
+    <body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
+      <!-- first menu link & social icon  -->
+      <div class=" wrapper bg-white border" id="home">
+        <div class="container">
+
+
+        </div>
+
+      </div>
+
+      <!-- header text/ logo section  -->
+      <div class="wrapper py-3 px-5 text-secondary bg-white" id="header">
+        <header class="d-flex flex-row justify-content-between">
+          <h1 class="d-flex align-items-center">
+           <img src="images/logo.png" alt="">
+            <a href="index.html" class="t3">
+
+                Rajgor Services </span>
+             </a>
+          </h1>
+          </h1>
+
+        </header>
+
+
+      </div>
+
+      <!-- Navigation main  -->
+      <div class="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary p-0" id="main_navbar">
+
+          <!-- logo -->
+
+
+          <!-- collapse button  -->
+          <button class="navbar-toggler" type="button" data-toggle ="collapse" data-target="#navyy">
+            <span class="navbar-toggler-icon "></span>
+
+          </button>
+
+          <!-- nav links  -->
+          <div class="collapse navbar-collapse justify-content-around" id="navyy">
+            <ul class="navbar-nav ml-auto">
+              <li class=nav-item"">
+                <a href="index.html" class="nav-link px-3">Home</a>
+              </li>
+              <li class=nav-item"">
+                <a href="products.html" class="nav-link px-3">Products</a>
+              </li>
+              <li class=nav-item"">
+                <a href="index.html#aboutus" class="nav-link px-3">About us</a>
+              </li>
+              <li class=nav-item"">
+                <a href="#contact" class="nav-link px-3">Contact us</a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </nav>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="jumbotron jumbotron-fluid" id="banner">
+          <div class="parallax text-center" style="background-image: url(images/tools.jpg);">
+            <div class="parallax-pattern-overlay">
+              <div class="container text-center" id="size-banner">
+
+                <h2 class="contact-title"> Products </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+    <div id="products" class="container fluid" data-toggle="modal" data-target="#exampleModal">
+      <br>
+
+        <div class="row">
+        <div class="col-md-4">
+          <img src="images/basejack.jpeg" alt="basejack" onclick="openModal();currentSlide(10)">
+            <h4 class="text-center">Base Jack </h4>
+
+        </div>
+
+		<div class="col-md-4">
+          <img src="images/centeringplate.jpg" alt="centeringplate" onclick="openModal();currentSlide(12)" >
+            <h4 class="text-center">Centering plate </h4>
+
+        </div>
+
+
+		<div class="col-md-4">
+          <img src="images/cuplock.jpg" alt="" onclick="openModal();currentSlide(2)">
+          <h4 class="text-center">Cuplock </h4>
+
+        </div>
+
+		<div class="col-md-4">
+          <img src="images/Hframe.png" alt="Hframe" onclick="openModal();currentSlide(11)">
+            <h4 class="text-center">Hframe </h4>
+
+        </div>
+
+		<div class="col-md-4">
+          <img src="images/jackprops.jpg" alt="jackprops" onclick="openModal();currentSlide(14)">
+            <h4 class="text-center">Jack Props </h4>
+
+        </div>
+
+		<div class="col-md-4">
+          <img src="images/mixingtray.png" alt="" onclick="openModal();currentSlide(6)">
+            <h4 class="text-center">Mixing tray </h4>
+
+        </div>
+
+		<div class="col-md-4">
+          <img src="images/propnut.jpg" alt="" onclick="openModal();currentSlide(5)">
+            <h4 class="text-center">Propnut </h4>
+
+        </div>
+
+		<div class="col-md-4">
+          <img src="images/shutter.jpg" alt="span" onclick="openModal();currentSlide(9)">
+            <h4 class="text-center">Shuttering Clamp </h4>
+
+        </div>
+
+		<div class="col-md-4">
+          <img src="images/Span.jpg" alt="" onclick="openModal();currentSlide(1)">
+            <h4 class="text-center">Support Span </h4>
+
+        </div>
+
+        <div class="col-md-4">
+          <img src="images/testingcube.jpg" alt="" onclick="openModal();currentSlide(4)">
+            <h4 class="text-center">Testing cube </h4>
+
+        </div>
+
+		<div class="col-md-4">
+          <img src="images/tierod.jpg" alt="" onclick="openModal();currentSlide(8)">
+            <h4 class="text-center">Tie rod </h4>
+
+        </div>
+
+        <div class="col-md-4">
+          <img src="images/uheadjack.jpg" alt="basejack" onclick="openModal();currentSlide(13)">
+            <h4 class="text-center"> U-Head Jack </h4>
+
+        </div>
+
+
+		<div class="col-md-4">
+          <img src="images/wheelbarrow.jpg" alt="" onclick="openModal();currentSlide(7)">
+            <h4 class="text-center">Wheel barrow </h4>
+
+        </div>
+
+		<div class="col-md-4">
+          <img src="images/wing.jpg" alt="" onclick="openModal();currentSlide(3)">
+            <h4 class="text-center">Wing Nut </h4>
+
+        </div>
+
+
+      </div>
+
+    </div> 
+
+
+
+    <div id="my-modal" class="modal">
+      <!-- close buuton -->
+      <span class="close" onclick="closeModal()">&times;</span>
+      <!-- content for modal -->
+      <div class="modal-content">
+        <div class="my-slides">
+
+          <img src="images/Span.jpg" class="portrait-image">
+          <div> Support Span is used to support the beam,construction slabs,props. </div>
+
+
+
+        </div>
+        <div class="my-slides">
+
+          <img src="images/cuplock.jpg" class="landscape-image">
+          <div> Cuplock is a fully galvanized multi-purpose steel scaffold system for general access and supporting vertical loads. </div>
+        </div>
+
+        <div class="my-slides">
+
+          <img src="images/wing.jpg" class="landscape-image">
+          <div>A wingnut, wing nut or butterfly nut is a type of nut with two large metal "wings", one on each side, so it can be easily tightened and loosened by hand without tools  </div>
+        </div>
+        <div class="my-slides">
+
+          <img src="images/testingcube.jpg" class="landscape-image">
+          <div> Testing Cube is used to test the compressive strength of the concrete  </div>
+        </div>
+        <div class="my-slides">
+
+          <img src="images/propnut.jpg" class="landscape-image">
+          <div> propnuts are widely used for erecting scaffold structures, form work, slabs, columns, beams and wall.
+ </div>
+
+
+        </div>
+
+        <div class="my-slides">
+
+          <img src="images/mixingtray.png" class="landscape-image">
+          <div> These trays are used in various industries in order to mix different kind of material. Light in weight and small size this range can be carried easily. </div>
+        </div>
+        <div class="my-slides">
+
+          <img src="images/wheelbarrow.jpg" class="landscape-image">
+          <div> A wheelbarrow is a small hand-propelled vehicle, usually with just one wheel, designed to be pushed and guided by a single person  </div>
+        </div>
+        <div class="my-slides">
+
+          <img src="images/tierod.jpg" class="portrait-image">
+          <div> iron or steel rod serving as a structural tie, especially one keeping the lower ends of a roof truss, arch, etc., from spreading </div>
+        </div>
+        <div class="my-slides">
+
+          <img src="images/shutter.jpg" class="landscape-image">
+          <div> Shuttering Clamp offered comprise precision designed and fabricated range of shuttering clamps that find application as scaffolding accessory in construction based applications. </div>
+        </div>
+        <div class="my-slides">
+
+          <img src="images/basejack.jpeg" class="portrait-image">
+          <div> The base jack levels the scaffold tower when the tower legs are placed on surfaces of different elevations. </div>
+        </div>
+        <div class="my-slides">
+
+
+          <img src="images/Hframe.png" class="landscape-image">
+          <div> Two Rectangular Frames, also called H Frames, are braced with cross bracing which are secured on H Frames by split pins.
+ </div>
+        </div>
+        <div class="my-slides">
+
+          <img src="images/centeringplate.jpg" class="landscape-image">
+          <div> Centering Plates are widely used in RCC casting work as the alternative to wooden plates. It provides reliable support for the materials used in constructing slabs, canopies and beams.  </div>
+
+        </div>
+        <div class="my-slides">
+
+          <img src="images/uheadjack.jpg" class="landscape-image">
+          <div> U-Heads Jacks scaffolding are designed to be used in conjunction with Adjustable System Scaffolding. </div>
+
+          </div>
+
+
+
+        <div class="my-slides">
+
+          <img src="images/jackprops.jpg" class="landscape-image">
+          <div>
+Jack posts are telescopic tubular steel props consisting of two primary parts, the main part of the post, and the jack screw or other adjustable fitting on one or both ends.</div>
+
+        </div>
+       </div>
+
+
+        <!-- next and prev button -->
+        <!-- <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlides(1)">&#10095;</a> -->
+      </div>
+
+    </div>
+
+
+
+    <div class="wrapper text-grey p-5" id="body-footer">
+      <footer class="row">
+        <!-- address -->
+        <div class="col-md-6 py-5" id="contact">
+          <h5 class="text-white py-3"> You can reach us at</h5>
+          <ul class="linklist contact">
+           <li> <i class="fa fa-map-marker"></i>
+             <address>
+               Street name &amp; Number,
+               <br> Shop No. 8, Haria Industrial Estate, Behind Capitol Hotel, Majiwada, Thane (w)
+               <br> Maharashtra,India
+
+             </address>
+           </li>
+           <li> <i class="fa fa-phone"></i>
+             +91-9821509815 / 8879044767
+           </li>
+           <li>  <i class="fa fa-envelope"></i>
+             dineshrajgor70@gmail.com
+
+            </li>
+
+
+          </ul>
+          <br>
+
+          <!-- social icon -->
+
+
+        </div>
+
+
+
+
+        <div class="col-md-6 py-5">
+          <h5 class="text-white py-3"> Locate us on map </h5>
+          <div class="map-content">
+            <div id="map">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.47061366991474!2d72.97644054093655!3d19.21572796045072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x473da8c26aa1efa6!2sJai%20Ambe%20Traders!5e0!3m2!1sen!2sin!4v1598712143104!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+            </div>
+
+          </div>
+
+          </form>
+
+        </div>
+
+
+
+
+
+
+
+
+
+      </footer>
+
+    </div>
+    <div class="wrapper text-white p-5 text-center" class="copyright">
+      <p class="align-items-center"> Copyright &copy;  Rajgor Services 2020</p>
+<p class="align-items-center"> Website Made by <a href="https://www.instagram.com/taaha30/">Taha Khan</a></p>
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>
